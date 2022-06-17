@@ -315,7 +315,7 @@
 
   </head>
 
-  <body class="index" data-languages="[]">
+  <body class="old-index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -403,18 +403,7 @@
               </ul>
           </li>
           <li>
-            <a href="#reference" class="toc-h1 toc-link" data-title="Reference">Reference</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#queries" class="toc-h2 toc-link" data-title="Queries">Queries</a>
-                  </li>
-                  <li>
-                    <a href="#mutations" class="toc-h2 toc-link" data-title="Mutations">Mutations</a>
-                  </li>
-                  <li>
-                    <a href="#objects" class="toc-h2 toc-link" data-title="Objects">Objects</a>
-                  </li>
-              </ul>
+            <a href="#schemas" class="toc-h1 toc-link" data-title="Schemas">Schemas</a>
           </li>
       </ul>
         <ul class="toc-footer">
@@ -2727,140 +2716,7 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/refinance <span c
 <aside class="success">
 This operation does not require authentication
 </aside>
-<h1 id='reference'>Reference</h1><h2 id='queries'>Queries</h2>
-<p><a id="opIdqueries"></a></p>
-
-<h3 id="retrieve-a-debt-parameters">Debts</h3>
-
-<p>Type: Debt!</p>
-
-<p>Retrieves a debt object that you have linked.</p>
-
-<h3 id="retrieve-a-debt-arguments">Arguments</h3>
-
-<table><thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>» debt_id</td>
-<td>string</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» type</td>
-<td>string</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» subtype</td>
-<td>string</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» provider_id</td>
-<td>integer</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» provider_name</td>
-<td>string</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» apr</td>
-<td>number</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» currency</td>
-<td>string</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» current_balance</td>
-<td>number</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» last_statement_balance</td>
-<td>number</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» last_statement_issue_date</td>
-<td>number</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» minimum_payment</td>
-<td>integer</td>
-<td>none</td>
-</tr>
-<tr>
-<td>» next_payment_due_date</td>
-<td>string</td>
-<td>none</td>
-</tr>
-</tbody></table>
-
-<h3 id="retrieve-a-debt-parameters">Repayments</h3>
-
-<p>Type: Repayment!</p>
-
-<p>Returns a list of debt repayments</p>
-
-<h3 id="retrieve-a-list-of-debt-repayments">Arguments</h3>
-
-<table><thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Required</th>
-<th>Restrictions</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>» data</td>
-<td>[object]</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» debt_id</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» amount</td>
-<td>number</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» currency</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-<tr>
-<td>»» date_created</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-</tbody></table>
-<h2 id='mutations'>Mutations</h2><h2 id='objects'>Objects</h2>
+<h1 id='schemas'>Schemas</h1>
       </div>
       <div class="dark-box">
       </div>
