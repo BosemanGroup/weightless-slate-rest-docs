@@ -25,8 +25,6 @@ Base URLs:
 
 * <a href="https://api.weightless.com">https://api.weightless.com</a>
 
-# Authentication
-
 <h1 id="weightless-debts">Debts</h1>
 
 ## Retrieve a Debt
@@ -659,7 +657,7 @@ curl -X PUT https://api.weightless.com/repayments/monthly-schedule \
 
 `PUT /repayments/monthly-schedule`
 
-Update 
+Update the monthly repayment schedule for your debts 
 
 > Body parameter
 
@@ -1099,7 +1097,7 @@ Status Code **200**
 This operation does not require authentication
 </aside>
 
-## Create a Payment
+## Create a Repayment
 
 <a id="opIdpost-payments"></a>
 
@@ -1810,6 +1808,8 @@ curl -X GET https://api.weightless.com/refinance \
 
 `GET /refinance`
 
+Retrieve an estimated APR for refinancing your debts
+
 > Example responses
 
 > OK
@@ -1841,55 +1841,3 @@ Status Code **200**
 <aside class="success">
 This operation does not require authentication
 </aside>
-
-# Reference
-
-## Queries
-
-<a id="opIdqueries"></a>
-
-<h3 id="retrieve-a-debt-parameters">Debts</h3>
-
-Type: Debt!
-
-Retrieves a debt object that you have linked.
-
-<h3 id="retrieve-a-debt-arguments">Arguments</h3>
-
-
-|Name|Type|Description|
-|---|---|---|
-|» debt_id|string|none|
-|» type|string|none|
-|» subtype|string|none|
-|» provider_id|integer|none|
-|» provider_name|string|none|
-|» apr|number|none|
-|» currency|string|none|
-|» current_balance|number|none|
-|» last_statement_balance|number|none|
-|» last_statement_issue_date|number|none|
-|» minimum_payment|integer|none|
-|» next_payment_due_date|string|none|
-
-
-<h3 id="retrieve-a-debt-parameters">Repayments</h3>
-
-Type: Repayment!
-
-Returns a list of debt repayments
-
-<h3 id="retrieve-a-list-of-debt-repayments">Arguments</h3>
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|» data|[object]|true|none|none|
-|»» debt_id|string|true|none|none|
-|»» amount|number|true|none|none|
-|»» currency|string|true|none|none|
-|»» date_created|string|true|none|none|
-
-## Mutations
-
-## Objects
-
