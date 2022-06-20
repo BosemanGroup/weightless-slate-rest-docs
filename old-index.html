@@ -288,7 +288,7 @@
 
   </head>
 
-  <body class="index" data-languages="[]">
+  <body class="old-index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -304,6 +304,9 @@
       <ul id="toc" class="toc-list-h1">
           <li>
             <a href="#weightless" class="toc-h1 toc-link" data-title="Weightless v1.0">Weightless v1.0</a>
+          </li>
+          <li>
+            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
             <a href="#weightless-debts" class="toc-h1 toc-link" data-title="Debts">Debts</a>
@@ -338,7 +341,7 @@
                     <a href="#list-all-repayments" class="toc-h2 toc-link" data-title="List all Repayments">List all Repayments</a>
                   </li>
                   <li>
-                    <a href="#create-a-repayment" class="toc-h2 toc-link" data-title="Create a Repayment">Create a Repayment</a>
+                    <a href="#create-a-payment" class="toc-h2 toc-link" data-title="Create a Payment">Create a Payment</a>
                   </li>
                   <li>
                     <a href="#retrieve-time-to-be-debt-free" class="toc-h2 toc-link" data-title="Retrieve time to be debt free">Retrieve time to be debt free</a>
@@ -372,6 +375,9 @@
                   </li>
               </ul>
           </li>
+          <li>
+            <a href="#schemas" class="toc-h1 toc-link" data-title="Schemas">Schemas</a>
+          </li>
       </ul>
         <ul class="toc-footer">
         </ul>
@@ -392,7 +398,7 @@
 <ul>
 <li><a href="https://api.weightless.com">https://api.weightless.com</a></li>
 </ul>
-
+<h1 id='authentication'>Authentication</h1>
 <h1 id="weightless-debts">Debts</h1>
 <h2 id='retrieve-a-debt'>Retrieve a Debt</h2>
 <p><a id="opIdget-debts-by-id"></a></p>
@@ -1226,7 +1232,7 @@ curl <span class="nt">-X</span> PUT https://api.weightless.com/repayments/monthl
 </code></pre></div>
 <p><code>PUT /repayments/monthly-schedule</code></p>
 
-<p>Update the monthly repayment schedule for your debts </p>
+<p>Update </p>
 
 <blockquote>
 <p>Body parameter</p>
@@ -1824,7 +1830,7 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/repayments <span 
 <aside class="success">
 This operation does not require authentication
 </aside>
-<h2 id='create-a-repayment'>Create a Repayment</h2>
+<h2 id='create-a-payment'>Create a Payment</h2>
 <p><a id="opIdpost-payments"></a></p>
 
 <blockquote>
@@ -2615,8 +2621,6 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/refinance <span c
 </code></pre></div>
 <p><code>GET /refinance</code></p>
 
-<p>Retrieve an estimated APR for refinancing your debts</p>
-
 <blockquote>
 <p>Example responses</p>
 
@@ -2685,7 +2689,7 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/refinance <span c
 <aside class="success">
 This operation does not require authentication
 </aside>
-
+<h1 id='schemas'>Schemas</h1>
       </div>
       <div class="dark-box">
       </div>
