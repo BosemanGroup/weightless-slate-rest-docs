@@ -1,6 +1,11 @@
 ---
 title: Weightless v1.0
-
+language_tabs:
+  - ruby: Ruby
+  - python: Python
+  - javascript: JavaScript
+  - go: Go
+  - shell: " cURL"
 language_clients:
   - ruby: ""
   - python: ""
@@ -129,18 +134,18 @@ Retrieves a debt object that you have linked.
 
 ```json
 {
-  "debt_id": "123e4567-e89b-12d3-a456-426614174000",
-  "type": "credit",
-  "subtype": "checking",
-  "provider_id": 12345,
-  "provider_name": "HSBC",
-  "apr": 5.5,
-  "currency": "usd",
-  "current_balance": 710.45,
-  "last_statement_balance": 710.45,
-  "last_statement_issue_date": 710.45,
-  "minimum_payment": 125.45,
-  "next_payment_due_date": "2022-05-01"
+  "debt_id": "string",
+  "type": "string",
+  "subtype": "string",
+  "provider_id": 0,
+  "provider_name": "string",
+  "apr": 0,
+  "currency": "string",
+  "current_balance": 0,
+  "last_statement_balance": 0,
+  "last_statement_issue_date": 0,
+  "minimum_payment": 0,
+  "next_payment_due_date": "string"
 }
 ```
 
@@ -156,18 +161,18 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» debt_id|string|true|none|none|
-|» type|string|true|none|none|
-|» subtype|string|true|none|none|
-|» provider_id|integer|true|none|none|
-|» provider_name|string|true|none|none|
-|» apr|number|true|none|none|
-|» currency|string|true|none|none|
-|» current_balance|number|true|none|none|
+|» debt_id|string|false|none|none|
+|» type|string|false|none|none|
+|» subtype|string|false|none|none|
+|» provider_id|integer|false|none|none|
+|» provider_name|string|false|none|none|
+|» apr|number|false|none|none|
+|» currency|string|false|none|none|
+|» current_balance|number|false|none|none|
 |» last_statement_balance|number|false|none|none|
 |» last_statement_issue_date|number|false|none|none|
-|» minimum_payment|integer|true|none|none|
-|» next_payment_due_date|string|true|none|none|
+|» minimum_payment|integer|false|none|none|
+|» next_payment_due_date|string|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -265,24 +270,24 @@ Returns a list of debts that you have linked.
 
 > Example responses
 
-> OK
+> 200 Response
 
 ```json
 {
   "data": [
     {
-      "debt_id": "123e4567-e89b-12d3-a456-426614174000",
-      "type": "credit",
-      "subtype": "checking",
-      "provider_id": 12345,
-      "provider_name": "HSBC",
-      "apr": 5.5,
-      "currency": "usd",
-      "current_balance": 710.45,
-      "last_statement_balance": 710.45,
-      "last_statement_issue_date": 710.45,
-      "minimum_payment": 125.45,
-      "next_payment_due_date": "2022-05-01"
+      "debt_id": "string",
+      "type": "string",
+      "subtype": "string",
+      "provider_id": 0,
+      "provider_name": "string",
+      "apr": 0,
+      "currency": "string",
+      "current_balance": 0,
+      "last_statement_balance": 0,
+      "last_statement_issue_date": 0,
+      "minimum_payment": 0,
+      "next_payment_due_date": "string"
     }
   ]
 }
@@ -300,19 +305,19 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» data|[object]|true|none|none|
-|»» debt_id|string|true|none|none|
-|»» type|string|true|none|none|
-|»» subtype|string|true|none|none|
-|»» provider_id|integer|true|none|none|
-|»» provider_name|string|true|none|none|
-|»» apr|number|true|none|none|
-|»» currency|string|true|none|none|
-|»» current_balance|number|true|none|none|
+|» data|[object]|false|none|none|
+|»» debt_id|string|false|none|none|
+|»» type|string|false|none|none|
+|»» subtype|string|false|none|none|
+|»» provider_id|integer|false|none|none|
+|»» provider_name|string|false|none|none|
+|»» apr|number|false|none|none|
+|»» currency|string|false|none|none|
+|»» current_balance|number|false|none|none|
 |»» last_statement_balance|number|false|none|none|
 |»» last_statement_issue_date|number|false|none|none|
-|»» minimum_payment|integer|true|none|none|
-|»» next_payment_due_date|string|true|none|none|
+|»» minimum_payment|integer|false|none|none|
+|»» next_payment_due_date|string|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -412,12 +417,12 @@ Retrieve the minimum repayment amount required for each debt that you have linke
 
 > Example responses
 
-> OK
+> 200 Response
 
 ```json
 {
-  "amount": 125.45,
-  "currency": "usd"
+  "amount": 0,
+  "currency": "string"
 }
 ```
 
@@ -433,8 +438,8 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» amount|integer|true|none|none|
-|» currency|string|true|none|none|
+|» amount|integer|false|none|none|
+|» currency|string|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -555,10 +560,10 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» enabled|boolean|true|none|none|
-|» amount|number|true|none|none|
-|» currency|string|true|none|none|
-|» day_of_month|integer|true|none|none|
+|» enabled|boolean|false|none|none|
+|» amount|number|false|none|none|
+|» currency|string|false|none|none|
+|» day_of_month|integer|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -657,7 +662,7 @@ curl -X PUT https://api.weightless.com/repayments/monthly-schedule \
 
 `PUT /repayments/monthly-schedule`
 
-Update the monthly repayment schedule for your debts 
+Update 
 
 > Body parameter
 
@@ -675,10 +680,10 @@ Update the monthly repayment schedule for your debts
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |body|body|object|false|none|
-|» enabled|body|boolean|true|none|
-|» amount|body|number|true|none|
-|» currency|body|string|true|none|
-|» day_of_month|body|integer|true|none|
+|» enabled|body|boolean|false|none|
+|» amount|body|number|false|none|
+|» currency|body|string|false|none|
+|» day_of_month|body|integer|false|none|
 
 <h3 id="update-monthly-schedule-responses">Responses</h3>
 
@@ -795,7 +800,7 @@ Update the monthly payment details for debt repayments.
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |body|body|object|false|none|
-|» enabled|body|boolean|true|none|
+|» enabled|body|boolean|false|none|
 
 <h3 id="update-monthly-schedule-enabled-responses">Responses</h3>
 
@@ -898,13 +903,13 @@ Retrieve the recommended monthly debt repayments. We calculate using xyz
 
 > Example responses
 
-> OK
+> 200 Response
 
 ```json
 {
-  "amount": 125.45,
-  "currency": "usd",
-  "description": "Increase your monthly payments by £100 to save £567 of interest payments."
+  "amount": 0,
+  "currency": "string",
+  "description": "string"
 }
 ```
 
@@ -920,9 +925,9 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» amount|integer|true|none|none|
-|» currency|string|true|none|none|
-|» description|string|true|none|none|
+|» amount|integer|false|none|none|
+|» currency|string|false|none|none|
+|» description|string|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -973,7 +978,8 @@ const inputBody = '{
   "count": 100,
   "offset": 0,
   "start_date": "2020-04-13",
-  "end_date": "2020-04-13"
+  "end_date": "2020-04-13",
+  "amount": null
 }';
 const headers = {
   'Content-Type':'application/json',
@@ -1043,7 +1049,8 @@ Returns a list of debt repayments
   "count": 100,
   "offset": 0,
   "start_date": "2020-04-13",
-  "end_date": "2020-04-13"
+  "end_date": "2020-04-13",
+  "amount": null
 }
 ```
 
@@ -1087,17 +1094,17 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» data|[object]|true|none|none|
-|»» debt_id|string|true|none|none|
-|»» amount|number|true|none|none|
-|»» currency|string|true|none|none|
-|»» date_created|string|true|none|none|
+|» data|[object]|false|none|none|
+|»» debt_id|string|false|none|none|
+|»» amount|number|false|none|none|
+|»» currency|string|false|none|none|
+|»» date_created|string|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
 </aside>
 
-## Create a Repayment
+## Create a Payment
 
 <a id="opIdpost-payments"></a>
 
@@ -1135,7 +1142,8 @@ print(r.json())
 const inputBody = '{
   "debt_id": "123e4567-e89b-12d3-a456-426614174000",
   "amount": 125.45,
-  "currency": "usd"
+  "currency": "usd",
+  "date_created": "2020-04-13"
 }';
 const headers = {
   'Content-Type':'application/json'
@@ -1197,7 +1205,8 @@ Manually create a repayment towards your debts. We will calculate which debt or 
 {
   "debt_id": "123e4567-e89b-12d3-a456-426614174000",
   "amount": 125.45,
-  "currency": "usd"
+  "currency": "usd",
+  "date_created": "2020-04-13"
 }
 ```
 
@@ -1207,8 +1216,9 @@ Manually create a repayment towards your debts. We will calculate which debt or 
 |---|---|---|---|---|
 |body|body|object|false|none|
 |» debt_id|body|string|false|none|
-|» amount|body|number|true|none|
-|» currency|body|string|true|none|
+|» amount|body|number|false|none|
+|» currency|body|string|false|none|
+|» date_created|body|string|false|none|
 
 <h3 id="create-a-payment-responses">Responses</h3>
 
@@ -1331,7 +1341,7 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» end_date|string|true|none|none|
+|» end_date|string|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -1449,7 +1459,7 @@ Returns a link_token, which is required as a parameter when initializing Link. O
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |body|body|object|false|none|
-|» type|body|string|true|none|
+|» type|body|string|false|none|
 
 > Example responses
 
@@ -1474,8 +1484,8 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» link_token|string|true|none|none|
-|» expiration|string|true|none|none|
+|» link_token|string|false|none|none|
+|» expiration|string|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -1586,7 +1596,7 @@ Save a Link public token that has been obtained from the onSuccess callback of L
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
 |body|body|object|false|none|
-|» public_token|body|string|true|none|
+|» public_token|body|string|false|none|
 
 <h3 id="save-link-public-token-responses">Responses</h3>
 
@@ -1692,12 +1702,10 @@ Retrieve the tip of the month, detailing recommendations on how you can improve 
 
 > Example responses
 
-> OK
+> 200 Response
 
 ```json
-{
-  "description": "You can reduce your time to be debt free by 20% with an increase of monthly payments of £55."
-}
+{}
 ```
 
 <h3 id="retrieve-tips-responses">Responses</h3>
@@ -1707,12 +1715,6 @@ Retrieve the tip of the month, detailing recommendations on how you can improve 
 |200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|OK|Inline|
 
 <h3 id="retrieve-tips-responseschema">Response Schema</h3>
-
-Status Code **200**
-
-|Name|Type|Required|Restrictions|Description|
-|---|---|---|---|---|
-|» description|string|true|none|none|
 
 <aside class="success">
 This operation does not require authentication
@@ -1808,8 +1810,6 @@ curl -X GET https://api.weightless.com/refinance \
 
 `GET /refinance`
 
-Retrieve an estimated APR for refinancing your debts
-
 > Example responses
 
 > OK
@@ -1834,10 +1834,13 @@ Status Code **200**
 
 |Name|Type|Required|Restrictions|Description|
 |---|---|---|---|---|
-|» apr_percentage|number|true|none|none|
-|» fee|integer|true|none|none|
-|» currency|string|true|none|none|
+|» apr_percentage|number|false|none|none|
+|» fee|integer|false|none|none|
+|» currency|string|false|none|none|
 
 <aside class="success">
 This operation does not require authentication
 </aside>
+
+# Schemas
+
