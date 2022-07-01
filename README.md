@@ -24,6 +24,7 @@ docker run --rm --name slate -p 4567:4567 -v $(pwd)/source:/srv/slate/source sla
 #### Deploy
 
 - Git commit
+- Git push main
 - ./deploy.sh --push-only
 - View docs in browser: https://bosemangroup.github.io/weightless-slate-rest-docs
 
