@@ -315,7 +315,7 @@
 
   </head>
 
-  <body class="x010722-index" data-languages="[]">
+  <body class="x050722-index" data-languages="[&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;,&quot;go&quot;,&quot;shell&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -324,6 +324,13 @@
     </a>
     <div class="toc-wrapper">
       <img src="images/logo-a65ea807.png" class="logo" alt="" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="ruby">Ruby</a>
+              <a href="#" data-language-name="python">Python</a>
+              <a href="#" data-language-name="javascript">JavaScript</a>
+              <a href="#" data-language-name="go">Go</a>
+              <a href="#" data-language-name="shell"> cURL</a>
+        </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
@@ -365,7 +372,7 @@
                     <a href="#list-all-repayments" class="toc-h2 toc-link" data-title="List all Repayments">List all Repayments</a>
                   </li>
                   <li>
-                    <a href="#create-a-repayment" class="toc-h2 toc-link" data-title="Create a Repayment">Create a Repayment</a>
+                    <a href="#create-a-payment" class="toc-h2 toc-link" data-title="Create a Payment">Create a Payment</a>
                   </li>
                   <li>
                     <a href="#retrieve-time-to-be-debt-free" class="toc-h2 toc-link" data-title="Retrieve time to be debt free">Retrieve time to be debt free</a>
@@ -398,6 +405,9 @@
                     <a href="#retrieve-refinance-estimate" class="toc-h2 toc-link" data-title="Retrieve refinance estimate">Retrieve refinance estimate</a>
                   </li>
               </ul>
+          </li>
+          <li>
+            <a href="#schemas" class="toc-h1 toc-link" data-title="Schemas">Schemas</a>
           </li>
       </ul>
         <ul class="toc-footer">
@@ -523,18 +533,18 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/debts/<span class
 <p>OK</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"debt_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123e4567-e89b-12d3-a456-426614174000"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"credit"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"subtype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"checking"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"provider_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">12345</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"provider_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HSBC"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"apr"</span><span class="p">:</span><span class="w"> </span><span class="mf">5.5</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"current_balance"</span><span class="p">:</span><span class="w"> </span><span class="mf">710.45</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"last_statement_balance"</span><span class="p">:</span><span class="w"> </span><span class="mf">710.45</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"last_statement_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="mf">710.45</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"minimum_payment"</span><span class="p">:</span><span class="w"> </span><span class="mf">125.45</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"next_payment_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-01"</span><span class="w">
+  </span><span class="nl">"debt_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"subtype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"provider_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"provider_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"apr"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"current_balance"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"last_statement_balance"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"last_statement_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"minimum_payment"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"next_payment_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <h3 id="retrieve-a-debt-responses">Responses</h3>
@@ -571,56 +581,56 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/debts/<span class
 <tr>
 <td>» debt_id</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» type</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» subtype</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» provider_id</td>
 <td>integer</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» provider_name</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» apr</td>
 <td>number</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» currency</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» current_balance</td>
 <td>number</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -641,14 +651,14 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/debts/<span class
 <tr>
 <td>» minimum_payment</td>
 <td>integer</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» next_payment_due_date</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -736,23 +746,23 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/debts <span class
 <blockquote>
 <p>Example responses</p>
 
-<p>OK</p>
+<p>200 Response</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"debt_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123e4567-e89b-12d3-a456-426614174000"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"credit"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"subtype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"checking"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"provider_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">12345</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"provider_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HSBC"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"apr"</span><span class="p">:</span><span class="w"> </span><span class="mf">5.5</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"current_balance"</span><span class="p">:</span><span class="w"> </span><span class="mf">710.45</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"last_statement_balance"</span><span class="p">:</span><span class="w"> </span><span class="mf">710.45</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"last_statement_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="mf">710.45</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"minimum_payment"</span><span class="p">:</span><span class="w"> </span><span class="mf">125.45</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"next_payment_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-01"</span><span class="w">
+      </span><span class="nl">"debt_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"subtype"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"provider_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"provider_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"apr"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"current_balance"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"last_statement_balance"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"last_statement_issue_date"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"minimum_payment"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"next_payment_due_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -791,63 +801,63 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/debts <span class
 <tr>
 <td>» data</td>
 <td>[object]</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» debt_id</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» type</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» subtype</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» provider_id</td>
 <td>integer</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» provider_name</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» apr</td>
 <td>number</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» currency</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» current_balance</td>
 <td>number</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -868,14 +878,14 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/debts <span class
 <tr>
 <td>»» minimum_payment</td>
 <td>integer</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» next_payment_due_date</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -965,11 +975,11 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/repayments/minimu
 <blockquote>
 <p>Example responses</p>
 
-<p>OK</p>
+<p>200 Response</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">125.45</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="w">
+  </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <h3 id="retrieve-minimum-repayment-responses">Responses</h3>
@@ -1006,14 +1016,14 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/repayments/minimu
 <tr>
 <td>» amount</td>
 <td>integer</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» currency</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -1144,28 +1154,28 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/repayments/monthl
 <tr>
 <td>» enabled</td>
 <td>boolean</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» amount</td>
 <td>number</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» currency</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» day_of_month</td>
 <td>integer</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -1253,7 +1263,7 @@ curl <span class="nt">-X</span> PUT https://api.weightless.com/repayments/monthl
 </code></pre></div>
 <p><code>PUT /repayments/monthly-schedule</code></p>
 
-<p>Update the monthly repayment schedule for your debts </p>
+<p>Update </p>
 
 <blockquote>
 <p>Body parameter</p>
@@ -1287,28 +1297,28 @@ curl <span class="nt">-X</span> PUT https://api.weightless.com/repayments/monthl
 <td>» enabled</td>
 <td>body</td>
 <td>boolean</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» amount</td>
 <td>body</td>
 <td>number</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» currency</td>
 <td>body</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» day_of_month</td>
 <td>body</td>
 <td>integer</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 </tr>
 </tbody></table>
@@ -1441,7 +1451,7 @@ curl <span class="nt">-X</span> PUT https://api.weightless.com/repayments/monthl
 <td>» enabled</td>
 <td>body</td>
 <td>boolean</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 </tr>
 </tbody></table>
@@ -1540,12 +1550,12 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/repayments/recomm
 <blockquote>
 <p>Example responses</p>
 
-<p>OK</p>
+<p>200 Response</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">125.45</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Increase your monthly payments by £100 to save £567 of interest payments."</span><span class="w">
+  </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <h3 id="retrieve-recommended-monthly-repayment-responses">Responses</h3>
@@ -1582,21 +1592,21 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/repayments/recomm
 <tr>
 <td>» amount</td>
 <td>integer</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» currency</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» description</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -1643,7 +1653,8 @@ This operation does not require authentication
   "count": 100,
   "offset": 0,
   "start_date": "2020-04-13",
-  "end_date": "2020-04-13"
+  "end_date": "2020-04-13",
+  "amount": null
 }</span><span class="dl">'</span><span class="p">;</span>
 <span class="kd">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
   <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span><span class="p">,</span>
@@ -1706,7 +1717,8 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/repayments <span 
   </span><span class="nl">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
   </span><span class="nl">"offset"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
   </span><span class="nl">"start_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-04-13"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-04-13"</span><span class="w">
+  </span><span class="nl">"end_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-04-13"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <h3 id="list-all-repayments-parameters">Parameters</h3>
@@ -1814,35 +1826,35 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/repayments <span 
 <tr>
 <td>» data</td>
 <td>[object]</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» debt_id</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» amount</td>
 <td>number</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» currency</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>»» date_created</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -1851,7 +1863,7 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/repayments <span 
 <aside class="success">
 This operation does not require authentication
 </aside>
-<h2 id='create-a-repayment'>Create a Repayment</h2>
+<h2 id='create-a-payment'>Create a Payment</h2>
 <p><a id="opIdpost-payments"></a></p>
 
 <blockquote>
@@ -1882,7 +1894,8 @@ This operation does not require authentication
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">inputBody</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">{
   "debt_id": "123e4567-e89b-12d3-a456-426614174000",
   "amount": 125.45,
-  "currency": "usd"
+  "currency": "usd",
+  "date_created": "2020-04-13"
 }</span><span class="dl">'</span><span class="p">;</span>
 <span class="kd">const</span> <span class="nx">headers</span> <span class="o">=</span> <span class="p">{</span>
   <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span>
@@ -1937,7 +1950,8 @@ curl <span class="nt">-X</span> POST https://api.weightless.com/repayments <span
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"debt_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"123e4567-e89b-12d3-a456-426614174000"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">125.45</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="w">
+  </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usd"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"date_created"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-04-13"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <h3 id="create-a-payment-parameters">Parameters</h3>
@@ -1969,14 +1983,21 @@ curl <span class="nt">-X</span> POST https://api.weightless.com/repayments <span
 <td>» amount</td>
 <td>body</td>
 <td>number</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» currency</td>
 <td>body</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» date_created</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
 <td>none</td>
 </tr>
 </tbody></table>
@@ -2115,7 +2136,7 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/repayments/debt-f
 <tr>
 <td>» end_date</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -2238,7 +2259,7 @@ curl <span class="nt">-X</span> POST https://api.weightless.com/link/token <span
 <td>» type</td>
 <td>body</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 </tr>
 </tbody></table>
@@ -2287,14 +2308,14 @@ curl <span class="nt">-X</span> POST https://api.weightless.com/link/token <span
 <tr>
 <td>» link_token</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» expiration</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -2410,7 +2431,7 @@ curl <span class="nt">-X</span> POST https://api.weightless.com/link/public_toke
 <td>» public_token</td>
 <td>body</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 </tr>
 </tbody></table>
@@ -2517,11 +2538,9 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/tips <span class=
 <blockquote>
 <p>Example responses</p>
 
-<p>OK</p>
+<p>200 Response</p>
 </blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"You can reduce your time to be debt free by 20% with an increase of monthly payments of £55."</span><span class="w">
-</span><span class="p">}</span><span class="w">
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{}</span><span class="w">
 </span></code></pre></div>
 <h3 id="retrieve-tips-responses">Responses</h3>
 
@@ -2542,26 +2561,6 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/tips <span class=
 </tbody></table>
 
 <h3 id="retrieve-tips-responseschema">Response Schema</h3>
-
-<p>Status Code <strong>200</strong></p>
-
-<table><thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Required</th>
-<th>Restrictions</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>» description</td>
-<td>string</td>
-<td>true</td>
-<td>none</td>
-<td>none</td>
-</tr>
-</tbody></table>
 
 <aside class="success">
 This operation does not require authentication
@@ -2642,8 +2641,6 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/refinance <span c
 </code></pre></div>
 <p><code>GET /refinance</code></p>
 
-<p>Retrieve an estimated APR for refinancing your debts</p>
-
 <blockquote>
 <p>Example responses</p>
 
@@ -2689,21 +2686,21 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/refinance <span c
 <tr>
 <td>» apr_percentage</td>
 <td>number</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» fee</td>
 <td>integer</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
 <tr>
 <td>» currency</td>
 <td>string</td>
-<td>true</td>
+<td>false</td>
 <td>none</td>
 <td>none</td>
 </tr>
@@ -2712,9 +2709,16 @@ curl <span class="nt">-X</span> GET https://api.weightless.com/refinance <span c
 <aside class="success">
 This operation does not require authentication
 </aside>
-
+<h1 id='schemas'>Schemas</h1>
       </div>
       <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="ruby">Ruby</a>
+                <a href="#" data-language-name="python">Python</a>
+                <a href="#" data-language-name="javascript">JavaScript</a>
+                <a href="#" data-language-name="go">Go</a>
+                <a href="#" data-language-name="shell"> cURL</a>
+          </div>
       </div>
     </div>
   </body>
