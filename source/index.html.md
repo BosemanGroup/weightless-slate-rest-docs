@@ -28,7 +28,7 @@ headingLevel: 2
 
 Base URLs:
 
-* <a href="https://api.weightless.com">https://api.weightless.com</a>
+* <a href="testhttps://api.weightless.com">testhttps://api.weightless.com</a>
 
 <h1 id="weightless-debts">Debts</h1>
 
@@ -46,7 +46,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'https://api.weightless.com/debts/{id}',
+result = RestClient.get 'testhttps://api.weightless.com/debts/{id}',
   params: {
   }, headers: headers
 
@@ -60,7 +60,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('https://api.weightless.com/debts/{id}', headers = headers)
+r = requests.get('testhttps://api.weightless.com/debts/{id}', headers = headers)
 
 print(r.json())
 
@@ -72,7 +72,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://api.weightless.com/debts/{id}',
+fetch('testhttps://api.weightless.com/debts/{id}',
 {
   method: 'GET',
 
@@ -101,7 +101,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://api.weightless.com/debts/{id}", data)
+    req, err := http.NewRequest("GET", "testhttps://api.weightless.com/debts/{id}", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -113,7 +113,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X GET https://api.weightless.com/debts/{id} \
+curl -X GET testhttps://api.weightless.com/debts/{id} \
   -H 'Accept: application/json'
 
 ```
@@ -192,7 +192,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'https://api.weightless.com/debts',
+result = RestClient.get 'testhttps://api.weightless.com/debts',
   params: {
   }, headers: headers
 
@@ -206,7 +206,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('https://api.weightless.com/debts', headers = headers)
+r = requests.get('testhttps://api.weightless.com/debts', headers = headers)
 
 print(r.json())
 
@@ -218,7 +218,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://api.weightless.com/debts',
+fetch('testhttps://api.weightless.com/debts',
 {
   method: 'GET',
 
@@ -247,7 +247,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://api.weightless.com/debts", data)
+    req, err := http.NewRequest("GET", "testhttps://api.weightless.com/debts", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -259,7 +259,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X GET https://api.weightless.com/debts \
+curl -X GET testhttps://api.weightless.com/debts \
   -H 'Accept: application/json'
 
 ```
@@ -339,7 +339,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'https://api.weightless.com/repayments/minimum-amount',
+result = RestClient.get 'testhttps://api.weightless.com/repayments/minimum-amount',
   params: {
   }, headers: headers
 
@@ -353,7 +353,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('https://api.weightless.com/repayments/minimum-amount', headers = headers)
+r = requests.get('testhttps://api.weightless.com/repayments/minimum-amount', headers = headers)
 
 print(r.json())
 
@@ -365,7 +365,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://api.weightless.com/repayments/minimum-amount',
+fetch('testhttps://api.weightless.com/repayments/minimum-amount',
 {
   method: 'GET',
 
@@ -394,7 +394,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://api.weightless.com/repayments/minimum-amount", data)
+    req, err := http.NewRequest("GET", "testhttps://api.weightless.com/repayments/minimum-amount", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -406,7 +406,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X GET https://api.weightless.com/repayments/minimum-amount \
+curl -X GET testhttps://api.weightless.com/repayments/minimum-amount \
   -H 'Accept: application/json'
 
 ```
@@ -459,7 +459,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'https://api.weightless.com/repayments/monthly-schedule',
+result = RestClient.get 'testhttps://api.weightless.com/repayments/monthly-schedule',
   params: {
   }, headers: headers
 
@@ -473,7 +473,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('https://api.weightless.com/repayments/monthly-schedule', headers = headers)
+r = requests.get('testhttps://api.weightless.com/repayments/monthly-schedule', headers = headers)
 
 print(r.json())
 
@@ -485,7 +485,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://api.weightless.com/repayments/monthly-schedule',
+fetch('testhttps://api.weightless.com/repayments/monthly-schedule',
 {
   method: 'GET',
 
@@ -514,7 +514,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://api.weightless.com/repayments/monthly-schedule", data)
+    req, err := http.NewRequest("GET", "testhttps://api.weightless.com/repayments/monthly-schedule", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -526,7 +526,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X GET https://api.weightless.com/repayments/monthly-schedule \
+curl -X GET testhttps://api.weightless.com/repayments/monthly-schedule \
   -H 'Accept: application/json'
 
 ```
@@ -583,7 +583,7 @@ headers = {
   'Content-Type' => 'application/json'
 }
 
-result = RestClient.put 'https://api.weightless.com/repayments/monthly-schedule',
+result = RestClient.put 'testhttps://api.weightless.com/repayments/monthly-schedule',
   params: {
   }, headers: headers
 
@@ -597,7 +597,7 @@ headers = {
   'Content-Type': 'application/json'
 }
 
-r = requests.put('https://api.weightless.com/repayments/monthly-schedule', headers = headers)
+r = requests.put('testhttps://api.weightless.com/repayments/monthly-schedule', headers = headers)
 
 print(r.json())
 
@@ -614,7 +614,7 @@ const headers = {
   'Content-Type':'application/json'
 };
 
-fetch('https://api.weightless.com/repayments/monthly-schedule',
+fetch('testhttps://api.weightless.com/repayments/monthly-schedule',
 {
   method: 'PUT',
   body: inputBody,
@@ -643,7 +643,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "https://api.weightless.com/repayments/monthly-schedule", data)
+    req, err := http.NewRequest("PUT", "testhttps://api.weightless.com/repayments/monthly-schedule", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -655,7 +655,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X PUT https://api.weightless.com/repayments/monthly-schedule \
+curl -X PUT testhttps://api.weightless.com/repayments/monthly-schedule \
   -H 'Content-Type: application/json'
 
 ```
@@ -709,7 +709,7 @@ headers = {
   'Content-Type' => 'application/json'
 }
 
-result = RestClient.put 'https://api.weightless.com/repayments/monthly-schedule/enabled',
+result = RestClient.put 'testhttps://api.weightless.com/repayments/monthly-schedule/enabled',
   params: {
   }, headers: headers
 
@@ -723,7 +723,7 @@ headers = {
   'Content-Type': 'application/json'
 }
 
-r = requests.put('https://api.weightless.com/repayments/monthly-schedule/enabled', headers = headers)
+r = requests.put('testhttps://api.weightless.com/repayments/monthly-schedule/enabled', headers = headers)
 
 print(r.json())
 
@@ -737,7 +737,7 @@ const headers = {
   'Content-Type':'application/json'
 };
 
-fetch('https://api.weightless.com/repayments/monthly-schedule/enabled',
+fetch('testhttps://api.weightless.com/repayments/monthly-schedule/enabled',
 {
   method: 'PUT',
   body: inputBody,
@@ -766,7 +766,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("PUT", "https://api.weightless.com/repayments/monthly-schedule/enabled", data)
+    req, err := http.NewRequest("PUT", "testhttps://api.weightless.com/repayments/monthly-schedule/enabled", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -778,7 +778,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X PUT https://api.weightless.com/repayments/monthly-schedule/enabled \
+curl -X PUT testhttps://api.weightless.com/repayments/monthly-schedule/enabled \
   -H 'Content-Type: application/json'
 
 ```
@@ -825,7 +825,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'https://api.weightless.com/repayments/recommended',
+result = RestClient.get 'testhttps://api.weightless.com/repayments/recommended',
   params: {
   }, headers: headers
 
@@ -839,7 +839,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('https://api.weightless.com/repayments/recommended', headers = headers)
+r = requests.get('testhttps://api.weightless.com/repayments/recommended', headers = headers)
 
 print(r.json())
 
@@ -851,7 +851,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://api.weightless.com/repayments/recommended',
+fetch('testhttps://api.weightless.com/repayments/recommended',
 {
   method: 'GET',
 
@@ -880,7 +880,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://api.weightless.com/repayments/recommended", data)
+    req, err := http.NewRequest("GET", "testhttps://api.weightless.com/repayments/recommended", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -892,7 +892,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X GET https://api.weightless.com/repayments/recommended \
+curl -X GET testhttps://api.weightless.com/repayments/recommended \
   -H 'Accept: application/json'
 
 ```
@@ -948,7 +948,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'https://api.weightless.com/repayments',
+result = RestClient.get 'testhttps://api.weightless.com/repayments',
   params: {
   }, headers: headers
 
@@ -963,7 +963,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('https://api.weightless.com/repayments', headers = headers)
+r = requests.get('testhttps://api.weightless.com/repayments', headers = headers)
 
 print(r.json())
 
@@ -986,7 +986,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://api.weightless.com/repayments',
+fetch('testhttps://api.weightless.com/repayments',
 {
   method: 'GET',
   body: inputBody,
@@ -1016,7 +1016,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://api.weightless.com/repayments", data)
+    req, err := http.NewRequest("GET", "testhttps://api.weightless.com/repayments", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1028,7 +1028,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X GET https://api.weightless.com/repayments \
+curl -X GET testhttps://api.weightless.com/repayments \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json'
 
@@ -1118,7 +1118,7 @@ headers = {
   'Content-Type' => 'application/json'
 }
 
-result = RestClient.post 'https://api.weightless.com/repayments',
+result = RestClient.post 'testhttps://api.weightless.com/repayments',
   params: {
   }, headers: headers
 
@@ -1132,7 +1132,7 @@ headers = {
   'Content-Type': 'application/json'
 }
 
-r = requests.post('https://api.weightless.com/repayments', headers = headers)
+r = requests.post('testhttps://api.weightless.com/repayments', headers = headers)
 
 print(r.json())
 
@@ -1149,7 +1149,7 @@ const headers = {
   'Content-Type':'application/json'
 };
 
-fetch('https://api.weightless.com/repayments',
+fetch('testhttps://api.weightless.com/repayments',
 {
   method: 'POST',
   body: inputBody,
@@ -1178,7 +1178,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "https://api.weightless.com/repayments", data)
+    req, err := http.NewRequest("POST", "testhttps://api.weightless.com/repayments", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1190,7 +1190,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X POST https://api.weightless.com/repayments \
+curl -X POST testhttps://api.weightless.com/repayments \
   -H 'Content-Type: application/json'
 
 ```
@@ -1243,7 +1243,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'https://api.weightless.com/repayments/debt-free',
+result = RestClient.get 'testhttps://api.weightless.com/repayments/debt-free',
   params: {
   }, headers: headers
 
@@ -1257,7 +1257,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('https://api.weightless.com/repayments/debt-free', headers = headers)
+r = requests.get('testhttps://api.weightless.com/repayments/debt-free', headers = headers)
 
 print(r.json())
 
@@ -1269,7 +1269,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://api.weightless.com/repayments/debt-free',
+fetch('testhttps://api.weightless.com/repayments/debt-free',
 {
   method: 'GET',
 
@@ -1298,7 +1298,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://api.weightless.com/repayments/debt-free", data)
+    req, err := http.NewRequest("GET", "testhttps://api.weightless.com/repayments/debt-free", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1310,7 +1310,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X GET https://api.weightless.com/repayments/debt-free \
+curl -X GET testhttps://api.weightless.com/repayments/debt-free \
   -H 'Accept: application/json'
 
 ```
@@ -1364,7 +1364,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.post 'https://api.weightless.com/link/token',
+result = RestClient.post 'testhttps://api.weightless.com/link/token',
   params: {
   }, headers: headers
 
@@ -1379,7 +1379,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.post('https://api.weightless.com/link/token', headers = headers)
+r = requests.post('testhttps://api.weightless.com/link/token', headers = headers)
 
 print(r.json())
 
@@ -1394,7 +1394,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://api.weightless.com/link/token',
+fetch('testhttps://api.weightless.com/link/token',
 {
   method: 'POST',
   body: inputBody,
@@ -1424,7 +1424,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "https://api.weightless.com/link/token", data)
+    req, err := http.NewRequest("POST", "testhttps://api.weightless.com/link/token", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1436,7 +1436,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X POST https://api.weightless.com/link/token \
+curl -X POST testhttps://api.weightless.com/link/token \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json'
 
@@ -1505,7 +1505,7 @@ headers = {
   'Content-Type' => 'application/json'
 }
 
-result = RestClient.post 'https://api.weightless.com/link/public_token',
+result = RestClient.post 'testhttps://api.weightless.com/link/public_token',
   params: {
   }, headers: headers
 
@@ -1519,7 +1519,7 @@ headers = {
   'Content-Type': 'application/json'
 }
 
-r = requests.post('https://api.weightless.com/link/public_token', headers = headers)
+r = requests.post('testhttps://api.weightless.com/link/public_token', headers = headers)
 
 print(r.json())
 
@@ -1533,7 +1533,7 @@ const headers = {
   'Content-Type':'application/json'
 };
 
-fetch('https://api.weightless.com/link/public_token',
+fetch('testhttps://api.weightless.com/link/public_token',
 {
   method: 'POST',
   body: inputBody,
@@ -1562,7 +1562,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("POST", "https://api.weightless.com/link/public_token", data)
+    req, err := http.NewRequest("POST", "testhttps://api.weightless.com/link/public_token", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1574,7 +1574,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X POST https://api.weightless.com/link/public_token \
+curl -X POST testhttps://api.weightless.com/link/public_token \
   -H 'Content-Type: application/json'
 
 ```
@@ -1624,7 +1624,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'https://api.weightless.com/tips',
+result = RestClient.get 'testhttps://api.weightless.com/tips',
   params: {
   }, headers: headers
 
@@ -1638,7 +1638,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('https://api.weightless.com/tips', headers = headers)
+r = requests.get('testhttps://api.weightless.com/tips', headers = headers)
 
 print(r.json())
 
@@ -1650,7 +1650,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://api.weightless.com/tips',
+fetch('testhttps://api.weightless.com/tips',
 {
   method: 'GET',
 
@@ -1679,7 +1679,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://api.weightless.com/tips", data)
+    req, err := http.NewRequest("GET", "testhttps://api.weightless.com/tips", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1691,7 +1691,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X GET https://api.weightless.com/tips \
+curl -X GET testhttps://api.weightless.com/tips \
   -H 'Accept: application/json'
 
 ```
@@ -1736,7 +1736,7 @@ headers = {
   'Accept' => 'application/json'
 }
 
-result = RestClient.get 'https://api.weightless.com/refinance',
+result = RestClient.get 'testhttps://api.weightless.com/refinance',
   params: {
   }, headers: headers
 
@@ -1750,7 +1750,7 @@ headers = {
   'Accept': 'application/json'
 }
 
-r = requests.get('https://api.weightless.com/refinance', headers = headers)
+r = requests.get('testhttps://api.weightless.com/refinance', headers = headers)
 
 print(r.json())
 
@@ -1762,7 +1762,7 @@ const headers = {
   'Accept':'application/json'
 };
 
-fetch('https://api.weightless.com/refinance',
+fetch('testhttps://api.weightless.com/refinance',
 {
   method: 'GET',
 
@@ -1791,7 +1791,7 @@ func main() {
     }
 
     data := bytes.NewBuffer([]byte{jsonReq})
-    req, err := http.NewRequest("GET", "https://api.weightless.com/refinance", data)
+    req, err := http.NewRequest("GET", "testhttps://api.weightless.com/refinance", data)
     req.Header = headers
 
     client := &http.Client{}
@@ -1803,7 +1803,7 @@ func main() {
 
 ```shell
 # You can also use wget
-curl -X GET https://api.weightless.com/refinance \
+curl -X GET testhttps://api.weightless.com/refinance \
   -H 'Accept: application/json'
 
 ```
