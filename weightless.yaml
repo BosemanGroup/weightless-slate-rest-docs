@@ -3,7 +3,7 @@ info:
   title: Weightless
   version: '1.0'
 servers:
-  - url: 'https://api.weightless.com'
+  - url: 'testhttps://api.weightless.com'
 paths:
   '/debts/{id}':
     get:
