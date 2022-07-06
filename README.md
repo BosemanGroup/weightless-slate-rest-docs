@@ -7,6 +7,7 @@ npm install -g widdershins
 ```
 
 #### Update docs
+- Archive previous index.html.md in directory source/ by renaming file with date prefix 
 - Modify open api file: weightless.yaml
 - Convert open api file: weightless.yaml to slate doc format:
 ```
